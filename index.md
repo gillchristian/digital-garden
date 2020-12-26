@@ -2,12 +2,12 @@
 tags: [home]
 ---
 
-# Neuron Template
+# gillchristian's Digital Garden 🌱
 
-You are viewing a template site, generated from [neuron-template](https://github.com/srid/neuron-template) and published by [neuron](https://neuron.zettel.page/). [GitHub Pages](https://pages.github.com/) is used to automatically publish this site every time the underlying Git repository gets updated.
+> This is my digital garden. There are many like it, but this one is mine.
 
-Get started by reading [[[README]]].
+This is the corner of the internet where I share my learnings.
 
-Other pages on this zettelkasten (this demonstrates how to use [link queries](https://neuron.zettel.page/link-query.html)):
+It is a garden, my garden.
 
-[[[z:zettels?tag=other]]]
+As I plant seeds of ideas here and there. As I tend and care for those ideas. As they grow and develop. The garden of knowledge takes shape. A shape that is constantly changing and evolving.
