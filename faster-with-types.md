@@ -1,6 +1,6 @@
 ---
 date: 2020-12-26T10:44
-tags: [🌱 Seedling, 🌱, Foo bar]
+tags: [Seedling]
 ---
 
 # Faster with types
