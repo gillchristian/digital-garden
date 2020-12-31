@@ -5,6 +5,8 @@ tags: [Seedling]
 
 # Maps of the Technical Writing
 
+![Maps of the Imagination cover](./static/maps-of-the-imagination.jpg)
+
 In the book [Maps of the Imagination: the Writer as Cartographer](https://www.amazon.com/Maps-Imagination-Writer-as-Cartographer/dp/1595340416) Peter Turchi draws parallelism between maps and the work of a cartographer to that of a writer.
 
 ### Chapter 1 - Metaphor: or, the map
