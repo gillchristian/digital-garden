@@ -5,25 +5,25 @@ tags: [Seedling]
 
 # Faster with types
 
-I see many people complaining about how TypeScript makes coding slower because now you have to write the types.
+Does working with an statically typed language, like TypeScript, make development slower because there's more code (ie. the types) to be typed? Does it make development slower because type errors need to be fixed?
 
-While it is true that you have to write some types, meaning more code, meaning it'll take longer. That's not the whole picture.
+I've seen these complaints and similar ones made when discussing if JavaScript applications should instead use any of the typed flavors (TypeScript, Flow, Elm, etc).
 
-### Disclaimer
+### My experience with TypeScript (and other typed languages)
 
-[YMMV](https://www.urbandictionary.com/define.php?term=ymmv): This is more of an empiric approach than a benchmark with measurements.
-I'm not trying to say that people are wrong when they say TS makes them slower. I'm just sharing my experience which is quite the opposite and yours might be too if you give TS or any other compiled language a try.
+**Disclaimer**: [YMMV](https://www.urbandictionary.com/define.php?term=ymmv). This is more of an empiric approach than an actual benchmark. I'm not trying to say that people are wrong when they say static types makes them slower. I'm only sharing my experience which is quite the opposite.
 
-### My ideas
+In my experience it's quite the opposite, working with statically typed languages makes development faster both on small and large projects, when starting from scratch and when maintaining an existing codebase.
 
-Here are a few things from my experience that are different from that:
+The only exception I can think of is when hacking on short scripts or proofs of concept (a single less than 100 LoC file). And even then is more about being able to easily run the code (`node index.js` or `runghc main.hs`) then type types _per se_.
 
-1. TypeScript has good type inference, you don't have to annotate every type all the time. Good libraries make great use of that (e.g. [fp-ts](https://github.com/gcanti/fp-ts)). What I'm trying to say is you don't have to write types all the time.
-2. Most of the time I write code that interacts with other code (be it my own app or the libraries I use) and by having types that experience is much faster.
-3. Even when I write stuff from scratch I'm using libraries, having the types of those libraries makes development faster.
-4. The less stuff you got to keep in your head the better. Types are a great documentation and help a lot to figure out what things do. It's faster to look at the types than to Google things.
-5. The more you can leverage the types system the easier to write the code is after. Type Oriented Development, Making Impossible States Impossible. We can even get the compiler to tell us what our code should be ([type wholes](https://dev.to/gcanti/type-holes-in-typescript-2lck)).
-6. The classic argument that eventually when your application becomes big then types makes you more confident about your code and allow to make changes faster. I was not going to mention this one but ...
-7. Having types means you unlock some editor features that make development faster. Although most of them are already available by VS Code to JavaScript (because they actually use TypeScript). It's not the same when TS tries to infer JS code.
-8. Chances are you'll get things right faster (if not at once) if you leverage the compiler.
-9. Faster feedback cycle than running the code. `tsc --watch --noEmit` FTW.
+Here are ~~thirteen~~ a few reasons why.
+
+1. TypeScript has good type inference meaning you don't have to annotate every type all the time. Good libraries make great use of that (e.g. [fp-ts](https://github.com/gcanti/fp-ts)). Other languages like Haskell and Ocaml take type inference way further only requiring type annotations in an small number of cases to give the compiler a hand esolving types. In Haskell, for example, it's common (should I say best?) practice to only annotate top level function signatures.
+2. Most of the time I write code that interacts with other code, be it my own app or third party libraries. Even when working on a project from scrath I will probably use a library, at least the language's standard library. By having types that experience is much faster as I'm less likely to need to check the documentation.
+3. The less stuff you got to keep in your head the better. Types are a great documentation and help a lot to figure out what things do. It's faster to look at the types than to Google things. Also _Go to definition_ is awesome!
+4. The more you can leverage the types system the easier and faster writing code becomes. Type Driven Development (the real TDD), [Making Impossible States Impossible](https://youtu.be/IcgmSRJHu_8). We can even get the compiler to tell us what our code should be ([type wholes](https://dev.to/gcanti/type-holes-in-typescript-2lck)).
+5. Having types means you unlock some editor features that make development faster. Although most of them are already available by VS Code to JavaScript (because they actually use TypeScript). It's not the same when TS tries to infer JS code.
+6. Chances are you'll get things right faster (if not at once) when leveraging the compiler.
+7. Compiling the code is a much faster feedback cycle than running then code. `ghci`, `cargo check`, `tsc --watch --noEmit` FTW! My workflow normally is: write some code, compile, fix type errors, repeat. And eventually run the code, of course.
+8. Then there's the classic argument that when your application grows big then types make you more confident about your code and allow to make changes faster. Everybody knows this one.
