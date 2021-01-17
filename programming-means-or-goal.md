@@ -21,6 +21,6 @@ This is in many cases is dictated by what the job is. For many cases spreadsheet
 
 ## Programming as the means on itself
 
-These people are programming for the sake of programming (ie. for fun more than profit), they are doing research on programming, they are developing programming languages, libraries or frameworks to enable others to program. Academia is on this side of the spectrum. A lot of open source is on this side of the specturm as well.
+These people are programming for the sake of programming (ie. for fun more than profit), they are doing research on programming, they are developing programming languages, libraries or frameworks to enable others to program. Academia is on this side of the spectrum. A lot of open source is on this side of the spectrum as well.
 
 Spreadsheets are an area of research as. Even by some of the same great minds that research academic languages like Haskell.
