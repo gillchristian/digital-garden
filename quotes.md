@@ -10,4 +10,4 @@ date: 2021-03-03T04:15
 
 > I don’t want to be know for my Instagram, I want to be know for being good at X and just happen to have an Instagram.
 >
-> Somebody on [The Ground Up Show](https://www.mattdavella.com/podcast)
+> Someone on [The Ground Up Show](https://www.mattdavella.com/podcast)
