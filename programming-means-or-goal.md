@@ -5,10 +5,6 @@ tags: [Seedling]
 
 # Programming, means to an end or the end on itself?
 
-First we have to define programming.
-
-...
-
 I think there are two types of programmers, those that do it as a mean to achieve something else and those that view programming as the end on itself. And then many flavors of that in between. So it’s more of an spectrum than a binary distinction.
 
 ## Programming as a means to an end
@@ -18,6 +14,14 @@ People that only use programming as a tool are usually focused on solving an spe
 The programming means used could be anything, from spreadsheets to programming languages (or what tech bros would accept as programming languages because Excel and CSS are not programming 🤬). And again is more about getting the job done than how the job gets done. So not always the focus will be to use state of the art tools. At least not most of the time.
 
 This is in many cases is dictated by what the job is. For many cases spreadsheets are enough, plenty of business run just fine on them. For other jobs you might need different tools, Haskell for example is used a lot in fintech, where the focus on getting things right and correct is at the core of the business.
+
+A great example of this is [remoteok.io](https://remoteok.io)
+
+> [remoteok.io](https://remoteok.io) is a single PHP file called "index.php" generating $101,101 this month. No frameworks. No libraries (except jQuery)💖
+>
+> (SGD 123.4k=USD 92k) + (USD 9.5k in ads) [remoteok.io/open](https://remoteok.io/open)
+
+[tweet by @levelsio](https://twitter.com/levelsio/status/1381709793769979906?s=21)
 
 ## Programming as the means on itself
 
