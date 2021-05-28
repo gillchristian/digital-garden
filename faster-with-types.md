@@ -13,7 +13,7 @@ I've seen these complaints and similar ones made when discussing if JavaScript a
 
 **Disclaimer**: [YMMV](https://www.urbandictionary.com/define.php?term=ymmv). This is more of an empiric approach than an actual benchmark. I'm not trying to say that people are wrong when they say static types makes them slower. I'm only sharing my experience which is quite the opposite.
 
-In my experience it's quite the opposite, working with statically typed languages makes development faster both on small and large projects, when starting from scratch and when maintaining an existing codebase.
+Working with statically typed languages makes development faster, for me, both on small and large projects, when starting from scratch and when maintaining an existing codebase.
 
 The only exception I can think of is when hacking on short scripts or proofs of concept (a single less than 100 LoC file). And even then is more about being able to easily run the code (`node index.js` or `runghc main.hs`) than type types _per se_.
 
@@ -22,6 +22,8 @@ Here are ~~thirteen~~ a few reasons why.
 #### Type inference
 
 TypeScript has good type inference meaning you don't have to annotate every type all the time. Good libraries make great use of that (e.g. [fp-ts](https://github.com/gcanti/fp-ts)). Other languages like Haskell and Ocaml take type inference way further only requiring type annotations in an small number of cases to give the compiler a hand esolving types. In Haskell, for example, it's common (should I say best?) practice to only annotate top level function signatures.
+
+Sadly this is not the case for all typed languages. Someone coming from a Java background will have a completely different experience. Even TypeScript feels quite verbose on the type level when compared to Elm or Haskell.
 
 #### Types act as a documentation
 
@@ -45,8 +47,8 @@ Chances are you'll get things right faster (if not at once) when leveraging the 
 
 #### Fast feedback cycle
 
-Compiling the code is a much faster feedback cycle than running then code. `ghci`, `cargo check`, `tsc --watch --noEmit` FTW! My workflow normally is: write some code, compile, fix type errors, repeat. And eventually run the code, of course.
+Compiling the code is a much faster feedback cycle than running it. `ghci`, `cargo check`, `tsc --watch --noEmit` FTW! My workflow normally is: write some code, compile, fix type errors, repeat. And eventually run the code, of course. I do this even when working on frontend applications.
 
 #### Types scale
 
-8Then there's the classic argument that when your application grows big then types make you more confident about your code and allow to make changes faster. Everybody knows this one.
+Then there's the classic argument in favor of statically typed languages that when your application grows big then types make you more confident about your code and allow to make changes faster. Everybody knows this one.
